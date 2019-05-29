@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Metas -->
+   <meta charset="utf-8">
+   <title>BlobBot - Discord Bot</title>
+   <meta content="" name="description">
+   <meta content="width=device-width, initial-scale=1.0" name="viewport"><!-- Css -->
+   <link href="css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
+   <link href="css/base.css" media="all" rel="stylesheet" type="text/css">
+   <link href="css/main.css" media="all" rel="stylesheet" type="text/css">
+   <link href="css/flexslider.css" media="all" rel="stylesheet" type="text/css">
+   <link href="css/magnific-popup.css" media="all" rel="stylesheet" type="text/css">
+   <link href="css/fonts.css" media="all" rel="stylesheet" type="text/css">
+   <link href="http://fonts.googleapis.com/css?family=Dosis:100,300,400,600,700" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,500,600,700" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,300,400,400i,600,700,800" rel="stylesheet">
+</head>
+<body>
+   <!-- Preloader -->
+   <div class="loader">
+      <!-- Preloader inner -->
+      <div class="loader-inner">
+         <svg class="loading-spinner" height="220" version="1.1" viewbox="0 0 100 100" width="120" xmlns="http://www.w3.org/2000/svg">
+         <circle class="spinner" cx="50" cy="50" fill="#13181d" r="21" stroke-width="2"></circle></svg>
+      </div><!-- End preloader inner -->
+   </div><!-- End preloader-->
+   <!--Wrapper-->
+   <div class="wrapper">
+      <div class="block-search-form">
+         <div class="block-content">
+            <div class="container">
+               <!--end of row-->
+               <div class="row justify-content-center">
+                  <div class="col-12 col-md-10 col-lg-8">
+                     <form method="get">
+                        <div class="card bg-red">
+                           <div class="card-body row no-gutters align-items-center">
+                              <div class="col-auto">
+                                 <i class="icon-search"></i>
+                              </div><!--end of col-->
+                              <div class="col">
+                                 <input class="form-control form-control-lg form-control-border0" placeholder="Escribe" type="search">
+                              </div><!--end of col-->
+                              <div class="col-auto">
+                                 <button class="btn btn-primary uppercase border-3" type="submit">Buscar ahora</button>
+                              </div><!--end of col-->
+                           </div>
+                        </div>
+                     </form>
+                  </div><!--end of col-->
+               </div><!--end of row-->
+            </div>
+         </div>
+      </div><!--Hero section-->
+      <section class="hero">
+         <!--Main slider-->
+         <div class="main-slider slider flexslider">
+            <ul class="slides">
+               <li>
+                  <div class="background-img overlay zoom"><img alt="" src="img/2.png"></div><!--Container-->
+                  <div class="container hero-content">
+                     <!--Row-->
+                     <div class="row">
+                        <div class="col-sm-12 text-center">
+                           <!--Inner hero-->
+                           <div class="inner-hero logo">
+                              <h1 class="large text-white uppercase mb-0">Bienvenido a BlobBot - Pagina Oficial.</h1>
+                              <h5 class="mb-0 text-white uppercase">El mejor bot para divertirte en tu servidor</h5>
+                           </div>
+                        </div><!--End row-->
+                     </div><!--End container-->
+                  </div><!--End inner hero-->
+               </li>
+               <li>
+                  <div class="background-img overlay zoom"><img alt="" src="img/3.png"></div><!--Container-->
+                  <div class="container hero-content">
+                     <!--Row-->
+                     <div class="row">
+                        <div class="col-sm-12 text-center">
+                           <!--Inner hero-->
+                           <div class="inner-hero">
+                              <h1 class="large text-white uppercase mb-0">Chat en vivo</h1>
+                              <h5 class="mb-0 text-white uppercase">Pulsa <a onclick="crate.toggle()">"aqui" </a>para ver el chat en vivo de discord desde tu navegador</h5><a class="video-play-but popup-youtube" href="https://www.youtube.com/watch?v=3rZX53Xyxj8" target="_blank"></a>
+                           </div>
+                        </div><!--End row-->
+                     </div><!--End container-->
+                  </div><!--End inner hero-->
+               </li>
+            </ul>
+         </div><!--End main slider-->
+         <!--Header-->
+         <header class="header default">
+            <div class=" left-part">
+               <a class="logo scroll" href="#wrapper">
+               <h2 class="mb-0 uppercase">BlobBot</h2></a>
+            </div>
+            <div class="right-part">
+               <nav class="main-nav">
+                  <div class="toggle-mobile-but">
+                     <a class="mobile-but" href="#">
+                     <div class="lines"></div></a>
+                  </div>
+                  <ul class="main-menu list-inline">
+                     <li>
+                        <a class="scroll list-inline-item" href="#wrapper">Inicio</a>
+                     </li>
+                     <li>
+                        <a class="scroll list-inline-item" href="#status">Estado</a>
+                     </li>
+                     <li>
+                        <a class="scroll list-inline-item" href="#staff">Staff</a>
+                     </li>
+                     <li>
+                        <a class="scroll list-inline-item" href="#rules">Reglas</a>
+                     </li>
+                     <li>
+                        <a class="scroll list-inline-item" href="#news">Noticias</a>
+                     </li>
+                     <li>
+                        <a class="scroll list-inline-item" href="#contact">Contacto</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </header><!--End header-->
+      </section><!--End hero section-->
+      <!--Latest album section-->
+      <section class="latest main" id="status">
+         <!--Container-->
+         <div class="container">
+            <!--Row-->
+            <div class="row justify-content-center">
+               <div class="col-12 col-md-10 col-lg-9">
+                  <div class="block-content text-center gap-one-bottom-md">
+                     <div class="block-title">
+                        <h1 class="uppercase">Estado del bot</h1>
+                     </div>
+                  </div>
+               </div>
+            </div><!--End row-->
+         </div><!--End container-->
+         <!--Container-->
+         <div class="container">
+            <!--Row-->
+            <div class="row justify-content-center">
+               <div class="list-inline-item">
+                  <h2 class="counter">El bot se encuentra OFFLINE!</h2><br>
+               </div>
+               <div class="col-12 col-lg-4">
+                  <div class="block-content text-center gap-one-bottom-sm">
+                     <div class="block-album-info">
+                        <!-- Trigger/Open The Modal -->
+                        <div class="buttonia list-inline-item">
+                           <a class="scroll" href="#status" onclick="demo4();copyFunction();"><span>Invitar bot</span></a>
+                        </div><!-- Status Container -->
+                        <div class="copyText">
+                           <input id="server-ip" type="text" value="mc.Hypixel.net"> 
+                           <script>
+                              function copyFunction() {
+                                 var copyText = document.getElementById("server-ip");
+                                 copyText.select();
+                                 document.execCommand("copy");
+                              }
+                           </script>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div><!--End row-->
+         </div><!--End container-->
+      </section><!--End latest album section-->
+      <!--Discography section-->
+      <section class="discography main" id="staff">
+            <div class="background-img"><img alt="" src="img/2.png"></div><!--Container-->
+         <!--Container-->
+         <div class="container">
+            <!--Row-->
+            <div class="row justify-content-center">
+               <div class="col-12 col-md-10 col-lg-9">
+                  <div class="block-content text-center gap-one-bottom-md">
+                     <div class="block-title">
+                        <h1 class="uppercase">Staff members</h1>
+                     </div>
+                  </div>
+               </div>
+            </div><!--End row-->
+         </div><!--End container-->
+         <!--Container-->
+         <div class="container">
+            <!--Row-->
+            <div class="row gap-one-bottom-sm">
+               <div class="col-12 col-md-6 col-lg-3">
+                  <div class="block-album block-content">
+                     <h5 class="mb-0 opc-70 uppercase">W 0 N G! 皇#2300</h5><a class="link" href="#staff">Dueño</a> <a href="#staff"><img alt="" class="animated" src="img/album/1.jpg"></a>
+                  </div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-3">
+                  <div class="block-album block-content">
+                     <h5 class="mb-0 opc-70 uppercase">zNotName_#9750</h5><a class="link" href="#staff"></a> <a href="#staff"><img alt="" class="animated" src="img/album/2.jpg"></a>
+                  </div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-3">
+                  <div class="block-album block-content">
+                     <h5 class="mb-0 opc-70 uppercase">W 0 N G! 皇#2300</h5><a class="link" href="#staff"></a> <a href="#staff"><img alt="" class="animated" src="img/album/1.jpg"></a>
+                  </div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-3">
+                  <div class="block-album block-content">
+                     <h5 class="mb-0 uppercase opc-70">W 0 N G! 皇#2300</h5><a class="link" href="#staff"></a> <a href="#staff"><img alt="" class="animated" src="img/album/1 .jpg"></a>
+                  </div>
+               </div>
+            </div><!--End row-->
+         </div><!--End container-->
+      </section><!--End discography section-->
+      <!--Divider section-->
+      <!--Tours section-->
+      <section class="tour main bg-secondary" id="rules">
+         <!--Container-->
+         <div class="container">
+            <!--Row-->
+            <div class="row justify-content-center">
+               <div class="col-12 col-md-10 col-lg-9">
+                  <div class="block-content gap-one-bottom-md text-center">
+                     <div class="block-title">
+                        <h1 class="uppercase">Reglas</h1>
+                     </div>
+                  </div>
+               </div>
+            </div><!--End row-->
+         </div><!--End container-->
+         <!--Container-->
+         <div class="container">
+            <!--Row-->
+            <div class="row justify-content-center">
+               <div class="col-12 col-lg-8 col-md-10">
+                  <ul class="block-tab">
+                     <!--Tab-->
+                     <li class="active">
+                        <div class="block-content gap-one-top-sm text-left">
+                           <div class="block-content">
+                              <div class="row">
+                                 <div class="col-lg-3 col-md-3">
+                                    <h4 class="switch-fot">1.</h4>
+                                 </div>
+                                 <div class="col-lg-4 col-md-4">
+                                    <h6 class="mb-0 opc-70 uppercase">BugReports</h6><span>No hagas spam al usar el comando "b!bugreport"</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <hr>
+                           <div class="block-content">
+                              <div class="row">
+                                 <div class="col-lg-3 col-md-3">
+                                    <h4 class="switch-fot">2.</h4>
+                                 </div>
+                                 <div class="col-lg-4 col-md-4">
+                                    <h6 class="mb-0 opc-70 uppercase">Staff</h6><span>No pidas privilegios a staffs.</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <hr>
+                           <div class="block-content">
+                              <div class="row">
+                                 <div class="col-lg-3 col-md-3">
+                                    <h4 class="switch-fot">3.</h4>
+                                 </div>
+                                 <div class="col-lg-4 col-md-4">
+                                    <h6 class="mb-0 opc-70 uppercase">Bugs</h6><span>No aproveches bugs del bot, solo reportalos..</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <hr>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div><!--End row-->
+         </div><!--End container-->
+      </section><!--End tour section-->
+      <!--News section-->
+      <section class="news main bg-secondary" id="news">
+         <!--Container-->
+         <div class="container">
+            <!--Row-->
+            <div class="row justify-content-center">
+               <div class="col-12 col-md-10 col-lg-9">
+                  <div class="block-content gap-one-bottom-md text-center">
+                     <div class="block-title">
+                        <h1 class="uppercase">Noticias</h1>
+                     </div>
+                  </div>
+               </div>
+            </div><!--End row-->
+         </div><!--End container-->
+         <!--Container-->
+         <div class="container">
+            <ul class="news-list">
+               <li class="row align-items-center justify-content-around">
+                  <div class="col-12 col-md-6 order-md-2">
+                     <div class="block-content">
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-5 order-2 text-left">
+                     <div class="block-content text-left">
+                        <span class="mb-2 opc-70">Junio 2, 2019</span>
+                        <h2>Version BlobBot [v1.1] Esta aca!!</h2>
+                        <p class="lead">Hemos decidido mejorar muchas cosas de nuestro proyecto, como esta nueva pagina web, más comandos y ETC!</p>
+                     </div>
+                  </div><!--end of col-->
+               </li>
+            </ul>
+         </div><!--End container-->
+      </section><!--End news section--><!--Contact section-->
+      <section class="contact main bg-secondary" id="contact">
+         <!--Container-->
+         <div class="container">
+            <!--Row-->
+            <div class="row justify-content-center">
+               <div class="col-12 col-md-10 col-lg-9">
+                  <div class="block-content gap-one-bottom-md text-center">
+                     <div class="block-title">
+                        <h1 class="uppercase">Esta en contacto con nosotros!</h1>
+                     </div>
+                  </div>
+               </div>
+            </div><!--End row-->
+         </div><!--End container-->
+         <!--Container-->
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-12">
+                  <ul class="block-social list-inline text-center">
+                     <li class="list-inline-item">
+                        <a href="#"><i class="socicon-twitter"></i></a>
+                     </li>
+                     <li class="list-inline-item">
+                        <a onclick="crate.toggle()"><i class="socicon-discord"></i></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div><!--End container-->
+      </section><!--End contact section-->
+      <footer class="pt-5 pb-5 footer">
+         <!--Container-->
+         <div class="container">
+            <div class="row justify-content-between align-items-center">
+               <div class="col-md-6">
+                  <small class="small"><span>&copy; All rights reserved - BlobBot 2019</a></small>
+               </div>
+            </div>
+         </div><!--End container-->
+      </footer><a class="block-top scroll" href="#wrapper"><i class="icon-angle-up"></i></a>
+   </div><!-- End wrapper-->
+   <!--Javascript-->
+   <script src="js/jquery-1.12.4.min.js">
+   </script> 
+   <script src="js/jquery.flexslider-min.js">
+   </script> 
+   <script src="js/smooth-scroll.js">
+   </script> 
+   <script src="js/jquery.magnific-popup.min.js">
+   </script> 
+   <script src="js/audio.min.js">
+   </script> 
+   <script src="js/placeholders.min.js">
+   </script> 
+   <script src="js/script.js">
+   </script>
+   <script src="js/counter.min.js">
+   </script>
+   <script src="js/popup.js">
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+      new Crate({
+        server: '583027683110158340',
+        channel: '583033107880607774',
+        shard: 'https://disweb.deploys.io'
+      })
+      crate.notify({
+        content: '`¡Bienvenido, Pulsa en el logo de discord!`',
+        timeout: 5000,
+        avatar: 'https://cdn.discordapp.com/icons/583027683110158340/0a29582d7d6f0071d473f52968e9e40b.png?size=128%22'
+        })
+    </script>
+</body>
+</html>
